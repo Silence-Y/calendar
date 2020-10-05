@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    background: #333;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#wrap{
+    width:420px;
+    margin: 200px auto 0 auto;
+    background: #2d2d2d;
+}
+.top{
+    padding: 20px 35px;
+    border-bottom: 1px solid #535353;
+}
+.top .time1{
+    font-size: 40px;
+    color: #efefef;
+}
+.top .time2{
+    font-size: 14px;
+    color: #efefef;
+}
+
+
+.bottom{
+    padding: 20px 0;
+    color: #efefef;
+}
+.control{
+    display: flex;    /* 弹性盒模型 */
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    padding: 0 35px;
+    margin-bottom: 15px;
+}
+.control div{
+    padding-right: 5px;
+}
+.control div span{
+    font-size: 20px;
+    display: inline-block;
+    transform: scaleX(1.7);
+    margin-left: 33px;
+    cursor: pointer;
+}
+.main{
+    padding: 0 20px;
+}
+.week{
+    display: flex;
+}
+.week span{  
+    height: 40px;
+    flex: 1 1 auto;   /* 收缩和扩展比例：不收缩不扩张，宽度为auto */
+    text-align: center;
+}
+.date{
+    display: flex;
+    flex-wrap: wrap;  /* 换行显示 */
+}
+.date li{
+    width: 54px;
+    height: 54px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;   /* 两个span标签换行 */
+    justify-content: center;
+}
+.date li span:nth-child(2){
+    font-size: 14px;
+}
+
+.date li.color{
+    color: #6e6e6e;
+}
+.date li.active{
+    background: #0078d7;
+}
